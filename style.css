@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #ecf2f8;
+  font-family: "Manrope", sans-serif;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
+h3 {
+  margin: 0;
+  font-size: 0.8125em;
+  font-weight: 500;
+}
+
+.center-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  vertical-align: center;
+}
+
+.attribution {
+  text-align: center;
+  font-size: 0.8125em;
+  color: #9eafc2;
+  margin: auto;
+}
+.attribution a {
+  text-decoration: none;
+  color: #48556a;
+}
+
+.card {
+  position: relative;
+  margin: auto;
+  max-width: 730px;
+  height: 280px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.19), 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+.card .image-box {
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+  background: url("images/drawers.jpg") no-repeat;
+  background-size: auto 100%;
+}
+.card .text-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 40%;
+  bottom: 0;
+  padding: 32px;
+}
+.card .text-box .title {
+  line-height: 27px;
+  color: #48556a;
+}
+.card .text-box .preview-text {
+  line-height: 19px;
+  color: #6d7f97;
+  padding-top: 20px;
+}
+.card .text-box .mini-info {
+  padding-top: 20px;
+  width: 100%;
+}
+.card .text-box .mini-info td:nth-child(1) {
+  width: 15%;
+}
+.card .text-box .mini-info td:nth-child(1) img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.card .text-box .mini-info td:nth-child(2) {
+  width: 75%;
+}
+.card .text-box .mini-info td:nth-child(2) .name {
+  font-weight: 700;
+  color: #48556a;
+}
+.card .text-box .mini-info td:nth-child(2) .date {
+  color: #6d7f97;
+  padding-top: 3px;
+}
+.card .text-box .mini-info td:nth-child(3) {
+  width: 15%;
+}
+.card .text-box .mini-info td:nth-child(3) button {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  text-decoration: none;
+  background-color: #ecf2f8;
+  cursor: pointer;
+  transition: all 2s;
+  z-index: 2;
+}
+
+.hidden-dialog-box {
+  display: none;
+}
+
+.shown-dialog-box {
+  display: flex;
+  cursor: auto;
+}
+
+.share-dialog-box {
+  position: relative;
+  top: 130px;
+  left: 540px;
+  padding: 18px 25px 17px 35px;
+  background-color: #48556a;
+  width: 188px;
+  height: 20px;
+  border-radius: 10px;
+}
+.share-dialog-box .detail-dialog-box {
+  background-color: #48556a;
+  top: 50%;
+  width: 18px;
+  height: 18px;
+  transform: rotate(45deg);
+  margin: auto;
+  padding: 2px 0 0 2px;
+}
+.share-dialog-box span {
+  font-size: 0.8125em;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 0.35em;
+  color: white;
+  padding-right: 15px;
+  vertical-align: text-top;
+}
+.share-dialog-box a {
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.button-animation-in {
+  animation-name: color;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+}
+@keyframes color {
+  0% {
+    background-color: #ecf2f8;
+  }
+  100% {
+    background-color: #6d7f97;
+  }
+}
+.button-animation-in img {
+  animation-name: bright;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+}
+@keyframes bright {
+  0% {
+    filter: brightness(100%);
+  }
+  100% {
+    filter: brightness(500%);
+  }
+}
+
+.dialog-box-animation {
+  animation-name: appear;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 425px) {
+  .card {
+    max-width: 327px;
+    min-width: 327px;
+    height: 512px;
+  }
+  .card .image-box {
+    width: 100%;
+    height: 216px;
+    border-radius: 10px 10px 0 0;
+    background-size: 100% auto;
+  }
+  .card .text-box {
+    top: 216px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 0;
+  }
+  .card .text-box .title {
+    font-size: 1em;
+    line-height: 149.1%;
+  }
+  .card .text-box .preview-text {
+    line-height: 20px;
+  }
+  .card .text-box .mini-info {
+    padding-top: 35px;
+  }
+
+  .share-dialog-box {
+    width: 100%;
+    height: 29px;
+    padding-bottom: 22px;
+    padding-top: 25px;
+    top: 438px;
+    left: 0;
+    bottom: 0;
+    border-radius: 0 0 10px 10px;
+    vertical-align: center;
+    z-index: 1;
+  }
+
+  .detail-dialog-box {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

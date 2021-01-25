@@ -1,0 +1,46 @@
+@import "variables";
+
+.hidden-dialog-box{
+  display: none;
+}
+
+.shown-dialog-box{
+  display: flex;
+  cursor: auto;
+}
+
+.share-dialog-box{
+  position: relative;
+  top: 130px;
+  left: 540px;
+  padding: 18px 25px 17px 35px;
+  background-color: $veryDarkGrayishBlue;
+  width: 188px;
+  height: 20px;
+  border-radius: 10px;
+
+
+  .detail-dialog-box{
+    background-color: $veryDarkGrayishBlue;
+    top: 50%;
+    width: 18px;
+    height: 18px;
+    transform: rotate(45deg);
+    margin: auto;
+    padding: 2px 0 0 2px;
+  }
+
+  span{
+    font-size: $font-s;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.35em;
+    color: white;
+    padding-right: 15px;
+    vertical-align: text-top;
+  }
+  a{
+    padding-right: 10px;
+    cursor: pointer;
+  }
+}

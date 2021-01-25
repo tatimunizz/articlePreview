@@ -1,0 +1,90 @@
+@import "variables";
+
+  .card {
+    position: relative;
+    margin: auto;
+    max-width: 730px;
+    height: 280px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.19), 0 10px 10px rgba(0, 0, 0, 0.20);
+
+    .image-box {
+      position: absolute;
+      width: 40%;
+      height: 100%;
+      border-radius: 10px 0 0 10px;
+      background: url("images/drawers.jpg") no-repeat;
+      background-size: auto 100%;
+
+    }
+
+    .text-box {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 40%;
+      bottom: 0;
+      padding: 32px;
+
+      .title {
+        line-height: 27px;
+        color: $veryDarkGrayishBlue;
+      }
+
+      .preview-text {
+        line-height: 19px;
+        color: $desaturatedDarkBlue;
+        padding-top: 20px;
+      }
+
+      .mini-info {
+        padding-top: 20px;
+        width: 100%;
+
+        td:nth-child(1) {
+          width: 15%;
+
+          img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+          }
+        }
+
+        td:nth-child(2) {
+          width: 75%;
+
+          .name {
+            font-weight: 700;
+            color: $veryDarkGrayishBlue;
+          }
+
+          .date {
+            color: $desaturatedDarkBlue;
+            padding-top: 3px;
+          }
+        }
+
+        td:nth-child(3) {
+          width: 15%;
+
+          button {
+            position: relative;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: none;
+            text-decoration: none;
+            background-color: $lightGrayishBlue;
+            cursor: pointer;
+            transition: all 2s;
+            z-index: 2;
+          }
+        }
+      }
+
+    }
+
+  }
+

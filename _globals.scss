@@ -1,0 +1,39 @@
+@import "variables";
+
+* {
+  margin: 0;
+}
+body{
+  background-color: $lightGrayishBlue;
+  font-family: 'Manrope', sans-serif;
+}
+h2{
+  margin: 0;
+  font-size: $font-m;
+  font-weight: 700;
+}
+h3{
+  margin: 0;
+  font-size: $font-s;
+  font-weight: 500;
+}
+
+
+.center-card{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  vertical-align: center;
+}
+
+.attribution{
+  text-align: center;
+  font-size: $font-s;
+  color: $grayishBlue;
+  margin: auto;
+
+  a{
+    text-decoration: none;
+    color: $veryDarkGrayishBlue;
+  }
+}

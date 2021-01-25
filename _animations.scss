@@ -1,0 +1,42 @@
+@import "variables";
+.button-animation-in{
+  animation-name: color;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  @keyframes color {
+    0%{
+      background-color: $lightGrayishBlue;
+    }
+    100%{
+      background-color: $desaturatedDarkBlue;
+    }
+  }
+  img{
+    animation-name: bright;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    @keyframes bright {
+      0%{
+        filter: brightness(100%);
+      }
+      100%{
+        filter: brightness(500%);
+      }
+    }
+  }
+}
+
+.dialog-box-animation{
+  animation-name: appear;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  @keyframes appear {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+
+}
