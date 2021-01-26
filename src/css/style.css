@@ -117,7 +117,7 @@ p {
 }
 
 .shown-dialog-box {
-  display: flex;
+  display: block;
   cursor: auto;
 }
 
@@ -125,10 +125,10 @@ p {
   position: relative;
   top: 130px;
   left: 540px;
-  padding: 18px 25px 17px 35px;
-  background-color: #48556a;
   width: 188px;
   height: 20px;
+  padding: 18px 25px 17px 35px;
+  background-color: #48556a;
   border-radius: 10px;
 }
 .share-dialog-box .detail-dialog-box {
@@ -147,7 +147,6 @@ p {
   letter-spacing: 0.35em;
   color: white;
   padding-right: 15px;
-  vertical-align: text-top;
 }
 .share-dialog-box a {
   padding-right: 10px;
@@ -234,7 +233,6 @@ p {
     left: 0;
     bottom: 0;
     border-radius: 0 0 10px 10px;
-    vertical-align: center;
     z-index: 1;
   }
 
