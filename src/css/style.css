@@ -1,5 +1,7 @@
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -7,13 +9,13 @@ body {
   font-family: "Manrope", sans-serif;
 }
 
-h2 {
+h1 {
   margin: 0;
   font-size: 1.25em;
   font-weight: 700;
 }
 
-h3 {
+p {
   margin: 0;
   font-size: 0.8125em;
   font-weight: 500;
@@ -51,7 +53,7 @@ h3 {
   width: 40%;
   height: 100%;
   border-radius: 10px 0 0 10px;
-  background: url("images/drawers.jpg") no-repeat;
+  background: url("../images/drawers.jpg") no-repeat;
   background-size: auto 100%;
 }
 .card .text-box {

@@ -1,16 +1,18 @@
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body{
   background-color: $lightGrayishBlue;
   font-family: 'Manrope', sans-serif;
 }
-h2{
+h1{
   margin: 0;
   font-size: $font-m;
   font-weight: 700;
 }
-h3{
+p{
   margin: 0;
   font-size: $font-s;
   font-weight: 500;
